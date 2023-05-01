@@ -1,20 +1,15 @@
-# Submission
-
-### Project Name:`Student Reviews App`
+## Project Name:`Rate My Professor Web 3`
 
 <br/>
-
 ![HomePage](https://raw.githubusercontent.com/marcialarturo/Student-Reviews-App/main/preview.png)
 
 # Project Description:
 
-Student Reviews App is an educational site where students evaluate, rate, and review teachers and courses. It allows users to send and receive stream payments and donations.
+Rate My Professor Web 3 is an educational site where students evaluate, rate, and review teachers and courses. It allows users to send and receive stream payments and donations.
 
-Students can learn and read more about classes before they commit or register. This will help students save thousands of dollars and time.
+It allows students to create payment streams for the class during the semester instead of paying upfront the whole amount. With Rate My Professor Web 3 students can cancel their Superfluid stream during the semester if they no longer like the direction of the class or if they want to drop out or something changed. The benefit of this is that professors are kept accountable and students have more control over their money and education.
 
-Furthermore, students can share class notes, labs, terms reviews, and more. Class notes creators can get tips from sharing their notes and students can add a new class that doesn’t exist on the app or rate one that already exists for a chance of winning NFTs.
-
-Users can search for teachers by name or choose a department and rate its teachers or read reviews left by other students. The rating system allows you to assign one to five stars to your teachers within the following categories:
+Students can rate their professor in the following categories:
 
 - Effective
 - Integrity
@@ -23,62 +18,37 @@ Users can search for teachers by name or choose a department and rate its teache
 - Determination
 - Homework
 
+This rating system keeps accountable professors and documents them on the chain.
+
+
+Students can also learn and read more about classes before they commit or register. This will help students save thousands of dollars and time.
+
+Furthermore, students can share class notes, labs, terms reviews, and more. Class notes creators can get tips from sharing their notes and students can add a new class that doesn’t exist on the app or rate one that already exists for a chance of winning NFTs.
+
+Users can search for teachers by name or choose a department and rate its teachers or read reviews left by other students.
 If you have ever attended a class taught by a difficult teacher, you know that his personality and skills can impact your school performance. But, by doing some research, you can set yourself up for success and increase your odds of getting a good grade before you ever start.
 
 In the future, we would like to add functionality for these NFTs to be used as a credit to take a class for free and more ways for students to work together. As well as chat functionality for the class to communicate with other students and the instructor.
 
 <br/>
 
-# How Student Reviews App uses IPFS
+# How Rate My Professor App uses IPFS
 
-Student Reviews App uses IPFS NFTStorage to store Professors’ names, job positions, and professors' past performance. IPFS is also used to store class NFTs, names, class details, class events, and class materials and notes. For reviews, IPFS saves all the reviews, tags, class difficulty, class quality, and ratings in a decentralized way.
+Rate My Professor App uses IPFS NFTStorage to store Professors’ names, job positions, and professors' past performance. IPFS is also used to store class NFTs, names, class details, class events, and class materials and notes. For reviews, IPFS saves all the reviews, tags, class difficulty, class quality, and ratings in a decentralized way.
 
 For every single endpoint, we return an NFTStorage hash that gets appended to the next IPFS object and it is saved on the smart contract. Then we populate our front end by calling our contract that returns all IPFS cids, and all data needed.
 
 IPFS makes our app a fully decentralized app with an immutable chain of events that allows public and accessible data to the masses.
 
-Example links:
-
-- Class Materials Feature
-
-  - Post New Material <br/>
-    https://github.com/marcialarturo/Student-Reviews-App/blob/61359ce28f776de0d3184ca5a5bc1d280c3acbf1/AddMaterials.js#L44
-
-  - Get All Class Materials <br/>
-    https://github.com/marcialarturo/Student-Reviews-App/blob/91cc4f6def6b24bfd198dcf1ac1272d1a5fdcb9c/Profile.js#L93
-
-- Professors and Classes Feature
-  - Post New Class <br/>
-    https://github.com/marcialarturo/Student-Reviews-App/blob/e9248d5b706981663414d486b1ed32d353733994/create-profile/CreateProfile.js#L47
-
-* Get All Classes <br/>
-  https://github.com/marcialarturo/Student-Reviews-App/blob/e3a7bcddec53343923b8289aa2aaf3a0ac3c85ab/App.js#L73
-
-* Reviews Feature
-
-  - Post New Review<br/>
-    https://github.com/marcialarturo/Student-Reviews-App/blob/36bf31d2b55101d0e4c746b8b7974d515c9c423e/PostComment.js#L53
-
-  - Get All Reviews <br/>
-    https://github.com/marcialarturo/Student-Reviews-App/blob/91cc4f6def6b24bfd198dcf1ac1272d1a5fdcb9c/Profile.js#L137
-    <br/><br/>
-
-# Link to the publicly visible source code repository
-
-https://github.com/marcialarturo/Student-Reviews-App<br/><br/>
-
 # Live Demo
+
 ### It is responsive website, for best view use a large monitor
+
 https://student-reviews.netlify.app/#/
 
 # Video Link
+https://youtu.be/MpmFhDF15fI
 
-https://youtu.be/B-kZtggch-0
-
-# Teamncontact info:
-
-Izmar, metaversemoon@gmail.com
-<br/><br/>
 
 # How It's Made
 
@@ -109,25 +79,22 @@ This app makes use of the following software:
 - `Mumbai Polygon Network` enables our application to be a scalable platform with fast transactions. We deployed our app on the Mumbai Network. Contract Address: `0x2DD669b696Eb8B9D13151517ffb1acCBc88dCFC8`
   <br/><br/>
 
+## Challenges we ran into
 
-  ## Challenges we ran into
 We run into some complications with the Smart contracts and the Safe SDK it took us longer than expected. Especially, creating Superfluis streams.
 
 Accomplishments that we're proud of
 We are proud of the final MVP and how our project went from an idea to a demo
 
 What we learned
-We learned to work with  the Safe SDK
+We learned to work with the Safe SDK
 
 What's next
 Post updates Upon registration, add a point system for users.
-
-
 
 # Deployed Address
 
 Contract Deployed Matic: 0x2DD669b696Eb8B9D13151517ffb1acCBc88dCFC8
 Contract Deployed Skale: 0x15036E33e8E8f706fd77A1aC550d28FD58432c1B
-
 
 Dashboard for streams: https://app.superfluid.finance/
