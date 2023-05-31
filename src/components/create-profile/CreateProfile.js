@@ -313,7 +313,7 @@ function CreateProfile({
             <br />
             <br />
             <center>
-            {contract && creatingClass ? (
+              {contract && creatingClass ? (
                 <div style={{ paddingTop: '2rem', paddingBottom: '2.5rem' }}>
                   <LinearProgress />
                   <p>Creating your post...</p>
