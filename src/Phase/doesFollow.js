@@ -1,18 +1,16 @@
-const { phase } = require('./utils/init.js')
-const { ethers } = require('ethers')
+// const { phase } = require('./utils/init.js')
+// const { ethers } = require('ethers')
 
-export async function doesFollow(follower, following) {
+// export async function doesFollow(follower, following) {
 
-    if(ethers.utils.isAddress(follower) && ethers.utils.isAddress(following)) {
-        let follows =  await phase.isFollowing(follower, following)
+//     if(ethers.utils.isAddress(follower) && ethers.utils.isAddress(following)) {
+//         let follows =  await phase.isFollowxing(follower, following)
 
-        return follows
+//         return follows
 
-    } else {
-        return "Please enter adresses as args"
-    }
-}
+//     } else {
+//         return "Please enter adresses as args"
+//     }
+// }
 
-// exports.doesFollow = doesFollow
-
-
+// // exports.doesFollow = doesFollow

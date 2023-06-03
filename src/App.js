@@ -14,7 +14,8 @@ import Notifications from './components/notifications/Notifications'
 import DonateNFT from './components/donate-nft/DonateNFT'
 import Web3Modal from 'web3modal'
 // import XmtpChat from './components/xmtp-chat/XmtpChat'
-import ABI from './artifacts/contracts/Ratemyclass.sol/Ratemyclass.json'
+
+import ABI from './ABI.json'
 import UAuth from '@uauth/js'
 const { ethers } = require('ethers')
 
@@ -123,7 +124,7 @@ function App() {
     setSigner(signer)
     let contract = new ethers.Contract(
       '0xB61B5Ff6930EB40734d480C4e0b5312702673ED0',
-      ABI.abi,
+      ABI,
       signer,
     )
     setContract(contract)

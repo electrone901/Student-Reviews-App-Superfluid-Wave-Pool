@@ -13,12 +13,12 @@ import '../profile/Profile.css'
 import userBGimage from '../../../images/backgroundIMG.png'
 import copy from '../../../images/copy.png'
 import lockedProfile from '../../../images/locked.png'
-import { doesFollow } from '../../../Phase/doesFollow'
-import { follow } from '../../../Phase/follow'
+// import { doesFollow } from '../../../Phase/doesFollow'
+// import { follow } from '../../../Phase/follow'
 import MyLinks from '../profile/MyLinks'
 import Followers from '../profile/Followers'
 import Following from '../profile/Following'
-import { displayPhase } from '../../../Phase/displayPhase'
+// import { displayPhase } from '../../../Phase/displayPhase'
 
 function MyProfile({ account, currentAccount, selectedProfile }) {
   console.log(
@@ -34,9 +34,9 @@ function MyProfile({ account, currentAccount, selectedProfile }) {
   }, [])
 
   const getProfile = async () => {
-    const user = await displayPhase(currentAccount)
-    console.warn(user)
-    setUserProfile(user)
+    // const user = await displayPhase(currentAccount)
+    // console.warn(user)
+    // setUserProfile(user)
   }
 
   const checkFollow = async (e) => {
